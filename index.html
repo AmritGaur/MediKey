@@ -3,31 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion Analysis</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sentiment Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <label for="textInput">Enter text:</label>
-        <input type="text" id="textInput">
+    <div class="main">
+        <div class="tittle">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand"><h1>Sentiment Analysis<br></h1></a>
+                    <div class="pastbutton">
+                    <button class="btn btn-outline-success" type="submit">Past 7 Days</button>
+                    <button class="btn btn-outline-success" type="submit">Past 30 Days</button>
+                    <button class="btn btn-outline-success" type="submit">Past 3 Months</button>
+                    </div>
+                  </form>
+                </div>
+            </nav>
+        </div>
     </div>
-    <h2>MediKey</h2>
-    <div id="virtualKeyboard" class="larger-keyboard"></div>
-    <p>Note: If clicked on Enter, an ID will be created for that entry inside the database.</p>
-    <p>
-        <a href="https://github.com/AmritGaur/MediKey" target="_blank">Click here to view all the files</a>
-        <br>
-        Note: This is our github link.
-    </p>
-    <script src="your_script.js"></script>
+    
+        <div class="timeline">
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"><h2>Overall Sentiment Level</h2></h5>
+                      <p class="card-text"><h3><u>Data</u></h3> <h3>out of <br>5</h3> </p>
+                      <a href="#" class="btn btn-success">Positive</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"><h2>Comment`s Sentiment</h2></h5>
+                      <p class="card-text"><h6><u>data</u>% Positive</h6></p>
+                      <p class="card-text"><h6><u>data</u>% Negative</h6></p>
+                      <p class="card-text"><h6><u>data</u>% Neutral</h6></p>
+                      <a href="#" class="btn btn-primary">Sentiment Breakdown</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              <h2>Advanced Analysis</h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sentiment Timeline</h5>
+              
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

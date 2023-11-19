@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+}
+.btn btn-outline-success{
+    align-self: flex-end;
+    margin: 2em;
+}
+.navbar bg-body-tertiary{
+    width: 100%;
+}
+.pastbutton{
+    
+}
